@@ -4,6 +4,19 @@
 ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
 **About this sensor**
+
 This is a custom sensor for PRTG that allows you to monitor whether specific IP addresses pass an SPF check for a given domain. The IP address and domain are passed as command line arguments.
 
 This sensor is a Node.js project bundled as a PE/exe file through Pkg. If you don't like the idea of downloading a binary from Git, you can run the Pkg command yourself. 
+
+**How to use**
+
+Simply call the sensor as follows:
+
+``` spf-checker.exe --ipAddress=45.3.23.5 --domain=myDomain.com ```
+
+**Building the sensor**
+
+If you wish to build the sensor run Pkg:
+
+``` pkg . --targets node10-win-x64 ```
