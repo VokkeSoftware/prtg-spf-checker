@@ -1,0 +1,17 @@
+{
+  "name": "spf-checker",
+  "version": "1.0.0",
+  "description": "Custom PRTG sensor to check Sender Policy Framework (SPF) DNS records",
+  "main": "main.js",
+  "bin": "bin.js",
+  "dependencies": {
+    "spf-check": "^0.4.3",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vokke Pty. Ltd.",
+  "license": "MIT"
+}
