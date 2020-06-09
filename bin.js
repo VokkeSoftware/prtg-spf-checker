@@ -7,5 +7,6 @@ validator.check(argv.ipAddress).then(result => {
         console.log('0:SPF check passes for host ' + argv.ipAddress);
     }else{
         console.log('2:SPF check fails for host ' + argv.ipAddress);
+        process.exit(1);
     }
 });
