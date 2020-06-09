@@ -11,9 +11,13 @@ This sensor is a Node.js project bundled as a PE/exe file through Pkg. If you do
 
 **How to use**
 
-Simply call the sensor as follows:
+You can use this sensor in two ways. The first is to check whether an IP address passes the SPF conditions on the domain:
 
-``` spf-checker.exe --ipAddress=45.3.23.5 --domain=myDomain.com ```
+``` spf-checker.exe --checkType=ip --ipAddress=45.3.23.5 --domain=myDomain.com ```
+
+The second is to simply ensure that a keyword is present within the SPF TXT record:
+
+``` spf-checker.exe --checkType=keyword --keyword=mailgun --domain=myDomain.com ```
 
 **Building the sensor**
 
